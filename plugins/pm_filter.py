@@ -688,7 +688,7 @@ async def auto_filter(client, msg, spoll=False):
             imdb_id=imdb["imdb_id"],
             cast=imdb["cast"],
             runtime=imdb["runtime"],
-            countries=imdb["countries"],
+            countries=imdb["#countries"],
             certificates=imdb["certificates"],
             languages=imdb["languages"],
             director=imdb["director"],
@@ -705,6 +705,7 @@ async def auto_filter(client, msg, spoll=False):
             plot=imdb['plot'],
             rating=imdb['rating'],
             url=imdb['url'],
+            duration=imdb["duration"],
             **locals()
         )
     else:
