@@ -174,7 +174,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             imdb_id = imdb["imdb_id"],
             cast = imdb["cast"],
             runtime = imdb["runtime"],
-            countries = imdb["countries"],
+            countries = imdb["#countries"],
             certificates = imdb["certificates"],
             languages = imdb["languages"],
             director = imdb["director"],
@@ -191,6 +191,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             plot = imdb['plot'],
             rating = imdb['rating'],
             url = imdb['url'],
+            duration = imdb["duration"],
             **locals()
         )
     else:
