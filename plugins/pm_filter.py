@@ -705,7 +705,6 @@ async def auto_filter(client, msg, spoll=False):
             plot=imdb['plot'],
             rating=imdb['rating'],
             url=imdb['url'],
-            duration=imdb["duration"],
             **locals()
         )
     else:
