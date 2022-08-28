@@ -1,12 +1,13 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},</b>
-<b>Mʏ Nᴀᴍᴇ ɪs</b> <a href=https://t.me/{}>{}</a>, <b>A Pʀᴇ-Fᴜɴᴄᴛɪᴏɴᴀʟ Fɪʟᴛᴇʀ Bᴏᴛ ᴡɪᴛʜ Aᴡsᴏᴍᴇ Fᴇᴀᴛᴜʀᴇs, I ᴄᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Tᴏᴏ😍</b>
+<b>Mʏ Nᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a>,</b>
+<b>A Pʀᴇ-Fᴜɴᴄᴛɪᴏɴᴀʟ Fɪʟᴛᴇʀ Bᴏᴛ ᴡɪᴛʜ Aᴡsᴏᴍᴇ Fᴇᴀᴛᴜʀᴇs, I ᴄᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Tᴏᴏ😍</b>
 
-<b>✯ Cʀᴇᴀᴛᴏʀ:</b> <a href=https://t.me/arvinxoxo>𝙎ᴘɪᴅᴇʏ ⭐/a>"""
+<b>✯ Cʀᴇᴀᴛᴏʀ:</b> <a href=https://t.me/arvinxoxo>𝙎ᴘɪᴅᴇʏ</a>⭐"""
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/arvinxoxo>SPIDEY ⭐/a>
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/arvinxoxo>SPIDEY</a>⭐
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
@@ -17,7 +18,7 @@ class script(object):
 - But I Don't Give You the Fuck🖕🏻 
 
 <b>DEVS:</b>
-- <a href=https://t.me/arvinxoxo>SPIDEY ⭐</a>"""
+- <a href=https://t.me/arvinxoxo>SPIDEY</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Sadie will respond whenever a keyword is found the message
