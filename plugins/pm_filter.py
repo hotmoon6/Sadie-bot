@@ -718,7 +718,7 @@ async def auto_filter(client, msg, spoll=False):
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(2)
-            await message.reply_photo.delete()
+            await message.delete()
             return
         except Exception as e:
             logger.exception(e)
