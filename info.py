@@ -42,9 +42,9 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'arvinxoxo')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n<b>Size:</b> {file_size}\n\n•────•──────────•────•
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '''<code>{file_name}</code>\n<b>Size:</b> {file_size}\n\n•────•──────────•────•
 <b>⚠️ Provided by : [Sᴀᴅɪᴇ⭐](https://t.me/mfsadiebot)</b>
-•────•──────────•────•")
+•────•──────────•────•''')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "{title}\n{year} • {kind} • {runtime} Minutes\n\n🏷 Title: <a href={url}>{title} ({year})</a>\n🌟 Rating: {rating} / 10\n🎭 Genres: {genres}\n📆 Release info: {release_date}\n☀️ Language: {languages}\n🌍 Country: {countries}\n\n<b>⚠️ Powered by #MindflayersMirror</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
