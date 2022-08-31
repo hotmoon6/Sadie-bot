@@ -70,13 +70,20 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of Eva Maria
+these are the extra features of Sadie
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
+    HOWTOUSE_TXT = """<b>⚠️ Powered By MindflayersMirror</b>
+
+<b>NOTE:</b>
+Send Any Movie Name with Year, I will Send You the Movie. If it Exist in Mindflayer's Database.
+
+<b>For Example :</b> <code>The Legend 2022</code>"""
+
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
