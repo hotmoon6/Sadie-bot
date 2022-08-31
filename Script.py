@@ -77,10 +77,10 @@ these are the extra features of Sadie
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
-    HOWTOUSE_TXT = """Cᴀᴜ𐒡ᴇ Yᴏᴜ‘ʀᴇ ᴛʜᴇ Rᴇᴀ𐒡ᴏɴ ɪ Bᴇʟɪᴇᴠᴇ ɪɴ Fᴀᴛᴇ Yᴏᴜ‘ʀᴇ ᴍʏ Pᴀʀᴀᴅɪ𐒡ᴇ...♥️
+    HOWTOUSE_TXT = """<b>Cᴀᴜ𐒡ᴇ Yᴏᴜ‘ʀᴇ ᴛʜᴇ Rᴇᴀ𐒡ᴏɴ ɪ Bᴇʟɪᴇᴠᴇ ɪɴ Fᴀᴛᴇ Yᴏᴜ‘ʀᴇ ᴍʏ Pᴀʀᴀᴅɪ𐒡ᴇ...♥️<b>
 
-Hᴇʟʟᴏ {} | ᴛʜɪs ɪs <a href=https://t.me/{}>{}</a> !
-ɪ ʙᴏᴜɴᴅ ᴛᴏ Wᴏʀᴋ ғᴏʀ <a href=https://t.me/arvinxoxo>My Aᴅᴍɪɴ</a>
+<b>Hᴇʟʟᴏ {} | ᴛʜɪs ɪs <a href=https://t.me/{}>{}</a> !<\b>
+<b>ɪ ʙᴏᴜɴᴅ ᴛᴏ Wᴏʀᴋ ғᴏʀ <a href=https://t.me/arvinxoxo>My Aᴅᴍɪɴ</a> </b>
 
 𝙉𝙤𝙩𝙚 :- 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝘼𝙣𝙮 𝙈𝙤𝙫𝙞𝙚 𝙬𝙞𝙩𝙝 𝙔𝙚𝙖𝙧, 𝙄 𝙬𝙞𝙡𝙡 𝙁𝙚𝙚𝙙 𝙔𝙤𝙪. 𝙄𝙛 𝙞𝙩 𝙀𝙭𝙞𝙨𝙩 𝙞𝙣 𝙈𝙞𝙣𝙙𝙛𝙡𝙖𝙮𝙚𝙧'𝙨 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚.
 
