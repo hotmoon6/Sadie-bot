@@ -30,7 +30,7 @@ async def start(client, message):
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
-            vix = await message.reply_photo(photo=random.choice(PICS), caption=script.HOWTOUSE_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+      vix = await message.reply_photo(photo=random.choice(PICS), caption=script.HOWTOUSE_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
             await asyncio.sleep(7) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking...
             await vix.delete()
         if not await db.get_chat(message.chat.id):
