@@ -52,13 +52,13 @@ async def telegraph(client, message):
         await message.reply(message, text=document)
     else:
         await message.reply(
-            f"<b>Link:-</b>\n\n <code>https://telegra.ph{response[0]}</code>",
+            f"<b>Link:-</b>\n\n <code>https://graph.org{response[0]}</code>",
             quote=True,
             reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="open link", url=f"https://telegra.ph{response[0]}"),
-                    InlineKeyboardButton(text="share link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
+                    InlineKeyboardButton(text="open link", url=f"https://graph.org{response[0]}"),
+                    InlineKeyboardButton(text="share link", url=f"https://telegram.me/share/url?url=https://graph.org{response[0]}")
                 ],
                 [InlineKeyboardButton(text="✗ Close ✗", callback_data="close_data")]
             ]
