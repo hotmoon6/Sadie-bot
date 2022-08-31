@@ -76,7 +76,12 @@ these are the extra features of Sadie
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+• /search  - <code>get the film information from various sources.</code>
+• /tgraph - <code>Reply with Media to get Telegraph</code>
+• /tts - <code>Reply with Readable Text to get Google Speech</code>
+• /short - <code>get the short link from various sources</code>
+• /torrent - <code>get torrent by send the command with movie name [🚸Under Development]</code>
+• /ytthumb - <code>get the youtube thumbnail</code>"""
     HOWTOUSE_TXT = """<b>Cᴀᴜ𐒡ᴇ Yᴏᴜ‘ʀᴇ ᴛʜᴇ Rᴇᴀ𐒡ᴏɴ ɪ Bᴇʟɪᴇᴠᴇ ɪɴ Fᴀᴛᴇ Yᴏᴜ‘ʀᴇ ᴍʏ Pᴀʀᴀᴅɪ𐒡ᴇ...♥️</b>
 
 <b>Hᴇʟʟᴏ {} | ᴛʜɪs ɪs <a href=https://t.me/{}>{}</a> !</b>
