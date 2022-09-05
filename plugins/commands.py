@@ -26,7 +26,6 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         vix = await message.reply_photo(photo=random.choice(PICS), caption=script.LYRIC_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
-        await asyncio.sleep(0)
         await message.delete()
         await asyncio.sleep(20) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking...
         await vix.delete()
