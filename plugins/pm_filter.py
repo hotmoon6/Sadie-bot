@@ -432,6 +432,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Piracy Is Crime')
+    elif query.data == "startgroup":
+        buttons = [[
+            InlineKeyboardButton('Explore', callback_data='exploregroup')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HOWTOUSE_TEXT.format(query,from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "exploregroup":
+        buttons = [[
+            InlineKeyboardButton('🚸 How to Use Me?', callback_data='useme'),
+            InlineKeyboardButton('💎 More', url='https://t.me/mfSadiebot?start=help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HOWTOUSE_TEXT.format(query,from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "useme":
+        buttons = [[
+            InlineKeyboardButton('🐞 Close', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HOWTOUSE_TEXT.format(query,from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
