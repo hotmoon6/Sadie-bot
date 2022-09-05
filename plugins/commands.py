@@ -21,14 +21,9 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [
-            [
-                InlineKeyboardButton('⭐ Owner', url='https://t.me/arvinxoxo')
-            ],
-            [
-                InlineKeyboardButton('💎 More', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            ]
-            ]
+        buttons = [[
+            InlineKeyboardButton('Explore', callback_data='exploregroup')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         vix = await message.reply_photo(photo=random.choice(PICS), caption=script.HOWTOUSE_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         await asyncio.sleep(7) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking...
