@@ -82,12 +82,7 @@ these are the extra features of Sadie
 • /short - <code>get the short link from various sources.</code>
 • /torrent - <code>get torrent by send the command with movie name. [🚸Under Development]</code>
 • /ytthumb - <code>get the youtube thumbnail.</code>"""
-    HOWTOUSE_TXT = """<b>Cᴀᴜ𐒡ᴇ Yᴏᴜ‘ʀᴇ ᴛʜᴇ Rᴇᴀ𐒡ᴏɴ ɪ Bᴇʟɪᴇᴠᴇ ɪɴ Fᴀᴛᴇ Yᴏᴜ‘ʀᴇ ᴍʏ Pᴀʀᴀᴅɪ𐒡ᴇ...♥️</b>
-
-<b>Hᴇʟʟᴏ {} | ᴛʜɪs ɪs <a href=https://t.me/{}>{}</a> !</b>
-<b>ɪ ʙᴏᴜɴᴅ ᴛᴏ Wᴏʀᴋ ғᴏʀ <a href=https://t.me/arvinxoxo>Mʏ Aᴅᴍɪɴ</a> </b>
-
-𝙉𝙤𝙩𝙚 :- 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝘼𝙣𝙮 𝙈𝙤𝙫𝙞𝙚 𝙬𝙞𝙩𝙝 𝙔𝙚𝙖𝙧, 𝙄 𝙬𝙞𝙡𝙡 𝙁𝙚𝙚𝙙 𝙔𝙤𝙪. 𝙄𝙛 𝙞𝙩 𝙀𝙭𝙞𝙨𝙩 𝙞𝙣 𝙈𝙞𝙣𝙙𝙛𝙡𝙖𝙮𝙚𝙧'𝙨 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚.
+    HOWTOUSE_TXT = """<b>Hᴇʟʟᴏ {} | <b>ɪ ʙᴏᴜɴᴅ ᴛᴏ Wᴏʀᴋ ғᴏʀ <a href=https://t.me/arvinxoxo>Mʏ Aᴅᴍɪɴ</a> ᴏɴʟʏ.</b>
 
 ✯ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/arvinxoxo>𝙎ᴘɪᴅᴇʏ</a>⭐"""
 
@@ -122,9 +117,13 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-    USEME_TXT = """<b>HOW TO USE ME?:</b>
-- Send Any Movie Name with its Respective Year
-- I will Send the Results Based on your Query. If the Movie is Available in Mindflayer's DataBase.
+    USEME_TXT = """<b>HOW TO USE ME?</b>
+
+- Send Any Movie Name with Respect to its Year.
+- I will Send the Results Based on your Query.
+- Only If the Movie is Available in Mindflayer's DataBase.
 
 <b>For Example:</b>
 - <code>The Legend 2022</code>"""
+    LYRIC_TXT = """<b>Cᴀᴜ𐒡ᴇ Yᴏᴜ‘ʀᴇ ᴛʜᴇ Rᴇᴀ𐒡ᴏɴ ɪ Bᴇʟɪᴇᴠᴇ ɪɴ Fᴀᴛᴇ Yᴏᴜ‘ʀᴇ ᴍʏ Pᴀʀᴀᴅɪ𐒡ᴇ...♥️</b>
+"""
