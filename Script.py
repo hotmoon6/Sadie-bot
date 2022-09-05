@@ -122,3 +122,9 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+    USEME_TXT = """<b>HOW TO USE ME?:</b>
+- Send Any Movie Name with its Respective Year
+- I will Send the Results Based on your Query. If the Movie is Available in Mindflayer's DataBase.
+
+<b>For Example:</b>
+- <code>The Legend 2022</code>"""
