@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HOWTOUSE_TEXT.format(query,from_user.mention),
+            text=script.HOWTOUSE_TEXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -449,7 +449,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HOWTOUSE_TEXT.format(query,from_user.mention),
+            text=script.HOWTOUSE_TEXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -459,7 +459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HOWTOUSE_TEXT.format(query,from_user.mention),
+            text=script.HOWTOUSE_TEXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
