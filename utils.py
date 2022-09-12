@@ -255,6 +255,39 @@ def list_to_str(k):
     else:
         return ' '.join(f'{elem}, ' for elem in k)
 
+def list_to_hash(k, flagg=False):
+    listing = ""
+    if not k:
+        return ""
+    elif len(k) == 1:
+        if not flagg:
+            return str("#"+k[0].replace(" ", "_").replace("-", "_"))
+        try:
+            conflag = (conn.get(name=k[0])).flag
+            return str(f"{conflag} #" + k[0].replace(" ", "_").replace("-", "_"))
+        except AttributeError:
+            return str("#"+k[0].replace(" ", "_").replace("-", "_"))
+    elif MAX_LIST_ELM:
+        k = k[:int(MAX_LIST_ELM)]
+        for elem in k:
+            ele = elem.replace(" ", "_").replace("-", "_")
+            if flagg:
+                try:
+                    conflag = (conn.get(name=elem)).flag
+                    listing += f'{conflag} '
+                except AttributeError:
+                    pass
+            listing += f'#{ele}, '
+        return f'{listing[:-2]} ...'
+    else:
+        for elem in k:
+            ele = elem.replace(" ", "_").replace("-", "_")
+            if flagg:
+                conflag = (conn.get(name=elem)).flag
+                listing += f'{conflag} '
+            listing += f'#{ele}, '
+        return listing[:-2]
+
 def last_online(from_user):
     time = ""
     if from_user.is_bot:
