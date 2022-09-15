@@ -28,7 +28,7 @@ async def torrent(_, message):
     m = await message.reply_text("Searching\nThis might take a while")
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(f"https://api.linkstore.eu.org/api/rarbg/{query}") \
+            async with session.get(f"https://api.linkstore.eu.org/api/rarbg/{query}?a=name") \
                     as resp:
                 a = json.loads(await resp.text())
     except:
