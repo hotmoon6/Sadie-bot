@@ -21,10 +21,6 @@ from pyrogram.parser import html as pyrogram_html
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 
-from tobrot import app, bot, LOGGER 
-from tobrot.helper_funcs.bot_commands import BotCommands
-from tobrot.helper_funcs.filters import CustomFilters
-
 search_lock = asyncio.Lock()
 search_info = {False: dict(), True: dict()}
 
