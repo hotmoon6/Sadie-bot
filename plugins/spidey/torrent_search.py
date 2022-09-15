@@ -14,9 +14,6 @@ import aiohttp
 import feedparser
 import itertools
 
-from telegram.update import Update
-from telegram.ext import CommandHandler
-
 from urllib.parse import quote as urlencode, urlsplit
 
 from pyrogram import filters, emoji, enums
