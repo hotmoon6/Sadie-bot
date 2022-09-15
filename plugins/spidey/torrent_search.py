@@ -20,6 +20,7 @@ from pyrogram import filters, emoji, enums
 from pyrogram.parser import html as pyrogram_html
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 search_lock = asyncio.Lock()
 search_info = {False: dict(), True: dict()}
