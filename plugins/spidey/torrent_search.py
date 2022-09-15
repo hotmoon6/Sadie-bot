@@ -24,7 +24,7 @@ from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 search_lock = asyncio.Lock()
 search_info = {False: dict(), True: dict()}
 
-def sendMessage(text: str, bot, update: Update):
+def sendMessage(text: str, bot, update):
     try:
         return bot.send_message(update.message.chat_id,
                             reply_to_message_id=update.message.id,
