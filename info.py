@@ -46,7 +46,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '''{file_caption}\n\n�
 <b>⚠️ Provided by : [Sᴀᴅɪᴇ⭐](https://t.me/mfsadiebot)</b>
 •────•──────────•────•''')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "{title}\n{year} • {kind} • {runtime} Minutes\n\n🏷 Title: <a href={url}>{title} ({year})</a>\n🌟 Rating: {rating} / 10\n🎭 Genres: {genres}\n📆 Release info: {release_date}\n☀️ Language: {languages}\n🌍 Country: {countries}\n\n<b>⚠️ Powered by #MindflayersMirror</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "{title}\n{year} • {kind} • {runtime} Minutes\n\n🏷 Title: <a href={url}>{title} ({year})</a>\n🌟 Rating: {rating} / 10\n🎭 Genres: {genres}\n📆 Release info: {release_date}\n☀️ Language: {languages}\n🌍 Country: {countries}\n\n<b>⚠️ Powered by MindflayersMirror</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
