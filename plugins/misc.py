@@ -189,11 +189,11 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
         caption = "No Results"
     if imdb.get('poster'):
         try:
-            await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await quer_y.message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            await quer_y.message.reply_photo(photo=poster, caption=caption)
         except Exception as e:
             logger.exception(e)
             await quer_y.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
