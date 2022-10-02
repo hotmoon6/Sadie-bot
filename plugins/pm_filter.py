@@ -757,7 +757,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             vs = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(20)
+            await asyncio.sleep(70000)
             await vs.delete()
             await message.delete()
             return
@@ -770,7 +770,7 @@ async def auto_filter(client, msg, spoll=False):
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(10)
+        await asyncio.sleep(70000)
     if spoll:
         await msg.message.delete()
 
