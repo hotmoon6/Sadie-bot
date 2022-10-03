@@ -12,5 +12,5 @@ aiofiles
 requests
 pyshorteners
 bs4
-imdbpy==2020.9.25
+imdbpy==2022.7.9
 ytthumb
