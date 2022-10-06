@@ -408,3 +408,18 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
+
+
+def TimeFormatter(milliseconds: int) -> str:
+    seconds, milliseconds = divmod(milliseconds, 1000)
+    minutes, seconds = divmod(seconds, 60)
+    hours, minutes = divmod(minutes, 60)
+    days, hours = divmod(hours, 24)
+    tmp = (
+        (f"{int(days)}d, " if days else "")
+        + (f"{int(hours)}h, " if hours else "")
+        + (f"{int(minutes)}m, " if minutes else "")
+        + (f"{int(seconds)}s, " if seconds else "")
+        + (f"{int(milliseconds)}ms, " if milliseconds else "")
+    )
+    return tmp[:-2]
