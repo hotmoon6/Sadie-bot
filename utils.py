@@ -2,7 +2,7 @@ import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM
 from imdb import IMDb
-from plugins.banned import TimeFormatter
+import TimeFormatter
 import asyncio
 from pyrogram.types import Message, InlineKeyboardButton
 from pyrogram import enums
@@ -41,6 +41,20 @@ class temp(object):
     U_NAME = None
     B_NAME = None
     SETTINGS = {}
+
+def TimeFormatter(milliseconds: int) -> str:
+    seconds, milliseconds = divmod(milliseconds, 1000)
+    minutes, seconds = divmod(seconds, 60)
+    hours, minutes = divmod(minutes, 60)
+    days, hours = divmod(hours, 24)
+    tmp = (
+        (f"{int(days)}d, " if days else "")
+        + (f"{int(hours)}h, " if hours else "")
+        + (f"{int(minutes)}m, " if minutes else "")
+        + (f"{int(seconds)}s, " if seconds else "")
+        + (f"{int(milliseconds)}ms, " if milliseconds else "")
+    )
+    return tmp[:-2]
 
 async def is_subscribed(bot, query):
     try:
@@ -410,18 +424,3 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
-
-
-def TimeFormatter(milliseconds: int) -> str:
-    seconds, milliseconds = divmod(milliseconds, 1000)
-    minutes, seconds = divmod(seconds, 60)
-    hours, minutes = divmod(minutes, 60)
-    days, hours = divmod(hours, 24)
-    tmp = (
-        (f"{int(days)}d, " if days else "")
-        + (f"{int(hours)}h, " if hours else "")
-        + (f"{int(minutes)}m, " if minutes else "")
-        + (f"{int(seconds)}s, " if seconds else "")
-        + (f"{int(milliseconds)}ms, " if milliseconds else "")
-    )
-    return tmp[:-2]
