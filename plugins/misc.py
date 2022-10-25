@@ -1,4 +1,5 @@
 import os
+import asyncio
 from pyrogram import Client, filters, enums
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from info import IMDB_TEMPLATE
@@ -134,6 +135,7 @@ async def imdb_search(client, message):
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
+            await asyncio.sleep(4)
             await k.delete()
             return await message.reply("♻️ Try Again!")
         btn = [
