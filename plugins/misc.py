@@ -134,7 +134,8 @@ async def imdb_search(client, message):
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
-            return await message.reply("No results Found")
+            await k.delete()
+            return await message.reply("♻️ Try Again!")
         btn = [
             [
                 InlineKeyboardButton(
