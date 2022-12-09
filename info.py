@@ -10,6 +10,9 @@ def is_enabled(value, default):
     else:
         return default
 
+# Port
+PORT = environ.get("PORT", "8080")
+
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ['API_ID'])
