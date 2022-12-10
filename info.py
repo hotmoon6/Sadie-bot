@@ -49,7 +49,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '''{file_caption}\n\n�
 <b>⚠️ Provided by : [Sᴀᴅɪᴇ⭐](https://t.me/mfsadiebot)</b>
 •────•──────────•────•''')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<code>{title}</code>\n<b>{year}</b> • <b>{kind}</b> • <b>{runtime}</b>\n\n🧿Tɪᴛʟᴇ : <a href={url}>{title} ({year})</a>\n⭐Rᴀᴛɪɴɢ : <code>{rating} / 10</code>\n🎭Gᴇɴʀᴇs : {genres}\n📆Rᴇʟᴇᴀsᴇᴅ : {release_date}\n🎙️Lᴀɴɢᴜᴀɢᴇs : {languages}\n🌎Cᴏᴜɴᴛʀɪᴇs : {countries}\n🔖Sᴛᴏʀʏʟɪɴᴇ : \n\t❝ <code>{plot}</code> ❞\n\n<b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<code>{title}</code>\n<b>{year}</b> • <b>{kind}</b> • <b>{runtime}</b>\n\n<b>🧿Tɪᴛʟᴇ : </b><a href={url}>{title} ({year})</a>\n<b>⭐Rᴀᴛɪɴɢ:</b> <code>{rating} / 10</code>\n<b>🎭Gᴇɴʀᴇs:</b> {genres}\n<b>📆Rᴇʟᴇᴀsᴇᴅ:</b> {release_date}\n<b>🎙️Lᴀɴɢᴜᴀɢᴇs:</b> {languages}\n<b>🌎Cᴏᴜɴᴛʀɪᴇs:</b> {countries}\n<b>🔖Sᴛᴏʀʏʟɪɴᴇ:</b> \n\t❝ <code>{plot}</code> ❞\n\n<b>⚠️MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
